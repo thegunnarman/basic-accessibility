@@ -2,9 +2,10 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
+  <title>basic-accessibility</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
-  <title></title>
+
 </head>
 <body>
 
@@ -16,12 +17,12 @@
   <header role="banner">
     <h1>Pangolin</h1>
     <nav role="navigation" id="nav" tabindex="0">
-    <ul>
-      <li><a href="#description"></a>Description</li>
-      <li><a href="#behaviour"></a>Behaviour</li>
-      <li><a href="#conservation"></a>Conservation</li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="#description" aria-label="description"></a>Description</li>
+        <li><a href="#behaviour" aria-label="behaviour"></a>Behaviour</li>
+        <li><a href="#conservation" aria-label="conservation"></a>Conservation</li>
+      </ul>
+    </nav>
   </header>
 
   <main role="main" id="main" tabindex="0">
@@ -29,7 +30,7 @@
     <section id="description">
       <h2>Description</h2>
 
-      <div id="countries">
+      <div id="countries" tabindex="0">
         <h3>Some countries where pangolins are found</h3>
         <ol>
           <li>Botswana</li>
@@ -45,12 +46,12 @@
       </div>
     </section>
 
-    <section id="behaviour">
+    <section id="behaviour" tabindex="0">
       <h2>Behaviour</h2>
       <a href="https://en.wikipedia.org/wiki/Pangolin#Behavior" aria-label="Read more about Pangolin behaviour">Read more</a>
     </section>
 
-    <section id="conservation">
+    <section id="conservation" tabindex="0">
       <h2>Conservation</h2>
       <a href="https://en.wikipedia.org/wiki/Pangolin#Conservation" aria-label="Read more about Pangolin conservation">Read more</a>
     </section>
